@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "tritium-kkbvva",
+  "private_key_id": "7804bd9ba3b41dbf5982edf59e35850391e2c79b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDA3it1G2jnMY98\n3FpknauVm8ux7cYPr7biTwQ89OXD2GvcJ/rWone5dtfgkcHbSiKCDjExfzyvz9iy\nvrJJOCG0QL5I7No2vq1zqfT4AekhlyjWt+6SjthOGNi79+Gs9wj0KJ1NC/RDBwNc\nSL+MFiKY+EI+eWICMRZMj6/uAy9R3af595ImgJcY5P1OT7a3XoRy9eoC6NaVCUPB\n9YmkBvkC3q9AEVASms8zyVbZcA0xVB1Dihx61r5QqZBDTKs2JpUbcTYKR/xNQSgV\nlM9RCoNCDnYFkIRGU1kaB6cSLbnO5HbhF7sV256q/2hq35agaZcL6QbRy1t8w1Xe\nvEFlcjPTAgMBAAECggEAAy49oxX7a0HIDMiW75rYnzHtVPcQzQq1uJuR/GTKYGDy\nhv1KFX2i2NGmReNReQmvciTpDur7CigQQyeCXC6dlNHp8W84OlNS0tDYf0v5V1XU\nMKgG3vgDYebmkUFJU9UdGsJCtUOj/V/YTiDNSZcPkyWFh0qnl+fNeWlTNcaQYmz+\n0ogFaNr4GvwSyTLJ680swRDC2PzF4oyENUUdVHW6WhwBGG6o9vuNdZvZ5FXImf4V\nqWo7pTGKkSjBv+WkRQeP6YP0zt1dG3ZfrS8o5j1SDz6rvaZvpO0BR4m/+XGjEX78\nhBZ7pOoAKJ+m0aIuoGn4sIF7Py8sdRNi2m2oDIvtCQKBgQDhqJXQB+zoq5/s9iSx\n2XpZFTA4cjpWw0lktGsbIk7WKZawYia0r2JxJXUXDOED4h/H4fDphck8Zc3zd0u/\ndCrmMzy7JQgIP2h14fCsLrlRfUycSCiLljHQq7q9xycZeqNXBgvu7iiClZLP7O9R\nWGcwU7dua/KGYm4qom0hb51pSQKBgQDazOSj2NCqmODSqU9zcb1lHwzbs7nZKNZq\nAfn0UVFHpu5G3zFI5Bq0kyukxxplP79JKne8cNaLPjVSO48NEHnYK7nGcm5nAi1K\npO9jwRmLggZ1yqDvcvwK8zVbcyXoDPqe2SsX3+mJmqv0JE1L/gRFjAMGgCy7zP/l\nwn2bQENwOwKBgGmzOAlrzPLngU/TtDiCcCbOH/owt1bwvq4nPIxHM7ppXKZeM1cr\nV+c77m7Pn47cGprcIKah/jMGVMQYOykA1x9hHK9klzCV0u502PEuKawcDwidXDCW\nN9tQtXYzlQMASQZ4VJqkf+E7ArvWdfsad6tRa3iTo9SCwqvBzXB+AbPRAoGBAJns\n1NizmjC59kgdVkiX9q6iBnC1YoR0Z0sSct6/KlgnBrATKl/mISdx9Z0peNdL3m1B\nlBScqUIyFF7yiXOeaKl8MWh7blHHRUei+sqJuUfcxGCvmUJ6+PdXG+1m937lSpbf\nnqJgIrJsfpX1x+8zF5w5oJM9Lrs7v7bKeYTz072rAoGAU0lyK4r5GKlgZSgmACQu\nNuTgN36n8ZwIUoVrfYt9zYiIjOQT9r5/HJIdemoczHvEKewSAqqAbd9BTLbKi3cJ\nflb9TpBEaB10T0d1FBOwy4V3b+aOox4QZ3qlhlEo3JlkCQgH/JeZBh4eB4OOQ0OV\nQ0hoHJIvVeLd1IftmnqcSMU=\n-----END PRIVATE KEY-----\n",
+  "client_email": "dialogflow-yhqhjy@tritium-kkbvva.iam.gserviceaccount.com",
+  "client_id": "102554140482984991247",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dialogflow-yhqhjy%40tritium-kkbvva.iam.gserviceaccount.com"
+}
