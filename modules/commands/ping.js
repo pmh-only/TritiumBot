@@ -17,4 +17,6 @@ exports.run = (tri, msg, cb) => {
   })
 }
 
+exports.name = '핑'
+exports.description = '트리튬 서버와의 통신 속도를 측정합니다'
 exports.keywords = ['핑', '속도', 'ping']

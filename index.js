@@ -16,8 +16,18 @@ tri.on('ready', () => {
 })
 
 tri.on('message', (msg) => {
-  msgModule.proc(tri, msg, (err) => {
-    if (err) logger.error(err)
-    else console.log(msg.author.username + '\'s command is solved')
-  })
+  try {
+    msgModule.proc(tri, msg, (err) => {
+      if (err) {
+        logger.error(err)
+        console.log(msg.author.username + '\'s command isn\'t solved')
+        msg.channel.stopTyping()
+      } else {
+        console.log(msg.author.username + '\'s command is solved')
+        msg.channel.stopTyping()
+      }
+    })
+  } catch (err) {
+    logger.error(err)
+  }
 })
