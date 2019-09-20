@@ -22,11 +22,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: ${{ matrix.node_version }} on ${{ matrix.os }}
+    - name: Get Node CI Package
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Test Tritium
+    - name: Run Tritium:Test
       run: |
         npm install
         npm test
