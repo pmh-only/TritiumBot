@@ -15,8 +15,8 @@ exports.run = (tri, msg, cb) => {
     cb()
   } else switch (msg.content.split(' ')[2]) {
     case '추가':
-      msg.channel.send('트리튬 클라우드에 추가할 음악 파일을 보내주세요 (현재 mp3만 가능합니다)')
-      msg.channel.awaitMessages((m) => m.author.id === msg.author.id && m.attachments.first().filename.endsWith('.mp3'), {
+      msg.channel.send('트리튬 클라우드에 추가할 음악 파일을 음악의 이름과 함깨 보내주세요 (현재 mp3만 가능합니다)')
+      msg.channel.awaitMessages((m) => m.author.id === msg.author.id  && (!m.attachments ? false : m.attachments.first().filename.endsWith('.mp3')), {
         max: 1,
         time: 60000
       }).then((collected) => {
@@ -24,7 +24,9 @@ exports.run = (tri, msg, cb) => {
           msg.channel.send('시간이 초과되었습니다! 다시시도해 주세요!')
           cb()
         } else {
-          msg.channel.send(discloud.write(collected.first().content || collected.first().attachments.first().filename, collected.first().attachments.first().url) + '로 저장을 완료하였습니다!')
+          const title = collected.first().content || collected.first().attachments.first().filename
+          discloud.write(title, collected.first().attachments.first().url)
+          msg.channel.send(title + '로 저장을 완료하였습니다!')
           cb()
         }
       })
@@ -37,9 +39,15 @@ exports.run = (tri, msg, cb) => {
       } else {
         const query = msg.content.split(' ').slice(3).join(' ')
         msg.member.voiceChannel.join().then((connection) => {
-          connection.playArbitraryInput(discloud.read(query).url)
-          msg.channel.send(query + '를 재생합니다')
-          cb()
+          const read = discloud.read(query)
+          if (!read) {
+            msg.channel.send(query + '는 트리튬 클라우드에 존재하지 않습니다')
+            cb()
+          } else {
+            connection.playArbitraryInput(read.url)
+            msg.channel.send(query + '를 재생합니다')
+            cb()
+          }
         })
       }
       break

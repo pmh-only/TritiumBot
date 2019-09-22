@@ -6,6 +6,7 @@ const discloud = require(path + '/db/discloud.json')
 
 exports.read = (id) => {
   console.log('Discloud - Read: ' + id)
+  if (!discloud[id]) return null
   return discloud[id]
 }
 
